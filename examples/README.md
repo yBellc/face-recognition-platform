@@ -16,10 +16,11 @@ demo_data/
 
 1. 启动 PostgreSQL/Redis/MinIO 和后端、前端。
 2. 使用管理员账号登录，在“对象库管理”中新建项目。
-3. 将 `demo_data/enrollment` 作为文件夹导入；文件夹名就是对象编号。
-4. 在“现场图片识别”上传 `demo_data/composite_probe/composite_01.jpg`。
-5. 点击“开始识别”，应看到两张人脸分别显示不同颜色框、候选对象和相似度。
-6. 点击“前往复核”，使用确认/排除/存疑按钮记录结论，再到归档列表查看。
+3. **重点对象库导入：**只将 `demo_data/enrollment` 作为文件夹导入；文件夹名就是对象编号。
+4. **现场检测上传：**从 `demo_data/probe`、`demo_data/unknown` 或 `demo_data/composite_probe` 选择图片，在“现场图片识别”上传；不要把这些目录反向导入对象库。
+5. 多人演示优先上传 `demo_data/composite_probe/composite_01.jpg`。
+6. 点击“开始识别”，应看到两张人脸分别显示不同颜色框、候选对象和相似度。
+7. 点击“前往复核”，使用确认/排除/存疑按钮记录结论，再到归档列表查看。
 
 也可以运行 `scripts/run_demo_smoke.py` 做接口级冒烟测试。它只使用本地演示项目和本目录图片，不会接触内部数据。
 

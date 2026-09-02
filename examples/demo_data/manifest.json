@@ -2,6 +2,12 @@
   "name": "匿名公开数据重点对象流程演示",
   "purpose": "验证建档、文件夹导入、1:N 检索、未知人员、多人脸识别和人工复核",
   "source": "项目已有 LFW 派生匿名样例；公开仓库发布前需复核原始许可",
+  "directory_roles": {
+    "enrollment": {"label":"重点对象库参考照片", "upload_to":"对象库管理", "type":"watchlist_reference_upload"},
+    "probe": {"label":"已知对象现场检测图片", "upload_to":"现场图片识别", "type":"probe_detection_upload"},
+    "unknown": {"label":"未知人员检测图片", "upload_to":"现场图片识别", "type":"probe_detection_upload"},
+    "composite_probe": {"label":"多人脸现场检测图片", "upload_to":"现场图片识别", "type":"probe_detection_upload"}
+  },
   "watchlist": [
     {"code":"PO-001","references":["enrollment/PO-001/ref_01.jpg","enrollment/PO-001/ref_02.jpg","enrollment/PO-001/ref_03.jpg"],"probes":["probe/PO-001/probe_01.jpg","probe/PO-001/probe_02.jpg","probe/PO-001/probe_03.jpg"]},
     {"code":"PO-002","references":["enrollment/PO-002/ref_01.jpg","enrollment/PO-002/ref_02.jpg","enrollment/PO-002/ref_03.jpg"],"probes":["probe/PO-002/probe_01.jpg","probe/PO-002/probe_02.jpg","probe/PO-002/probe_03.jpg"]},
