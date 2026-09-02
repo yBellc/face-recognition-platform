@@ -1,0 +1,23 @@
+{
+  "name": "匿名公开数据重点对象流程演示",
+  "purpose": "验证建档、文件夹导入、1:N 检索、未知人员、多人脸识别和人工复核",
+  "source": "项目已有 LFW 派生匿名样例；公开仓库发布前需复核原始许可",
+  "watchlist": [
+    {"code":"PO-001","references":["enrollment/PO-001/ref_01.jpg","enrollment/PO-001/ref_02.jpg","enrollment/PO-001/ref_03.jpg"],"probes":["probe/PO-001/probe_01.jpg","probe/PO-001/probe_02.jpg","probe/PO-001/probe_03.jpg"]},
+    {"code":"PO-002","references":["enrollment/PO-002/ref_01.jpg","enrollment/PO-002/ref_02.jpg","enrollment/PO-002/ref_03.jpg"],"probes":["probe/PO-002/probe_01.jpg","probe/PO-002/probe_02.jpg","probe/PO-002/probe_03.jpg"]},
+    {"code":"PO-003","references":["enrollment/PO-003/ref_01.jpg","enrollment/PO-003/ref_02.jpg","enrollment/PO-003/ref_03.jpg"],"probes":["probe/PO-003/probe_01.jpg","probe/PO-003/probe_02.jpg","probe/PO-003/probe_03.jpg"]},
+    {"code":"PO-004","references":["enrollment/PO-004/ref_01.jpg","enrollment/PO-004/ref_02.jpg","enrollment/PO-004/ref_03.jpg"],"probes":["probe/PO-004/probe_01.jpg","probe/PO-004/probe_02.jpg","probe/PO-004/probe_03.jpg"]},
+    {"code":"PO-005","references":["enrollment/PO-005/ref_01.jpg","enrollment/PO-005/ref_02.jpg","enrollment/PO-005/ref_03.jpg"],"probes":["probe/PO-005/probe_01.jpg","probe/PO-005/probe_02.jpg","probe/PO-005/probe_03.jpg"]},
+    {"code":"PO-006","references":["enrollment/PO-006/ref_01.jpg","enrollment/PO-006/ref_02.jpg","enrollment/PO-006/ref_03.jpg"],"probes":["probe/PO-006/probe_01.jpg","probe/PO-006/probe_02.jpg","probe/PO-006/probe_03.jpg"]},
+    {"code":"PO-007","references":["enrollment/PO-007/ref_01.jpg","enrollment/PO-007/ref_02.jpg","enrollment/PO-007/ref_03.jpg"],"probes":["probe/PO-007/probe_01.jpg","probe/PO-007/probe_02.jpg","probe/PO-007/probe_03.jpg"]},
+    {"code":"PO-008","references":["enrollment/PO-008/ref_01.jpg","enrollment/PO-008/ref_02.jpg","enrollment/PO-008/ref_03.jpg"],"probes":["probe/PO-008/probe_01.jpg","probe/PO-008/probe_02.jpg","probe/PO-008/probe_03.jpg"]}
+  ],
+  "unknown":["unknown/UNKNOWN-001/probe_01.jpg","unknown/UNKNOWN-001/probe_02.jpg","unknown/UNKNOWN-001/probe_03.jpg","unknown/UNKNOWN-002/probe_01.jpg","unknown/UNKNOWN-002/probe_02.jpg","unknown/UNKNOWN-002/probe_03.jpg"],
+  "composite":[
+    {"path":"composite_probe/composite_01.jpg","components":["PO-001","PO-002"]},
+    {"path":"composite_probe/composite_02.jpg","components":["PO-001","UNKNOWN-001","PO-003"]},
+    {"path":"composite_probe/composite_03.jpg","components":["UNKNOWN-001","UNKNOWN-002","UNKNOWN-003"]}
+  ],
+  "counts":{"watchlist_subjects":8,"reference_images":24,"watchlist_probe_images":24,"unknown_probe_images":6,"composite_probe_images":3,"total_images":57},
+  "limitations":["样例规模很小","合成人脸图只用于验证多人脸 UI 和流程","不能据此推断生产准确率"]
+}

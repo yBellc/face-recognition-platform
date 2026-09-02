@@ -1,0 +1,43 @@
+# secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# Python/runtime
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+*.tsbuildinfo
+
+# Local databases and object-storage fallback
+backend/data/*.db
+backend/data/*.sqlite*
+backend/app.db
+backend/storage_fallback/
+
+# Frontend dependencies/build output
+frontend/node_modules/
+frontend/dist/
+
+# Model weights (download separately; avoid large/binary redistribution)
+backend/models/*
+!backend/models/README.md
+
+# Raw datasets and face images (use an authorized, private data store)
+data/*
+!data/README.md
+output/*
+!output/README.md
+
+# IDE/OS/temp files
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+desktop.ini

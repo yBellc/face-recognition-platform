@@ -1,0 +1,74 @@
+[
+  {
+    "date": "2026-08-31",
+    "target": "重点关注对象识别平台",
+    "register": "product",
+    "direction": "可解释的跨页面项目上下文与受控删除：统一顶部切换器、状态语义和归档生命周期",
+    "motion": ["project-context-transition", "face-select", "status-transition"],
+    "notes": "补齐项目选择同步、停用状态误判修复和已归档探针永久删除；评测信息头保留少量科技光感，避免整页黑字白底。"
+  },
+  {
+    "date": "2026-08-31",
+    "target": "重点关注对象识别平台",
+    "register": "product",
+    "direction": "统一项目上下文：顶部切换器、页面同步和可控的归档删除操作",
+    "motion": ["project-context-transition", "status-transition", "menu-enter"],
+    "notes": "修正对象状态误显示为停用；归档探针支持确认后永久删除；创建或切换项目后跨页面记住并同步当前项目。"
+  },
+  {
+    "date": "2026-08-31",
+    "target": "重点关注对象识别平台",
+    "register": "product",
+    "direction": "多人人脸同色映射：检测框、切换标签、候选卡片和解释记录共享一套颜色语义",
+    "motion": ["face-select", "status-transition", "route-transition"],
+    "notes": "点击左侧任意颜色后，右侧对应人脸标签、候选卡片和说明同步使用同色；保持颜色稳定，不以候选置信度颜色覆盖人脸身份颜色。"
+  },
+  {
+    "date": "2026-08-31",
+    "target": "重点关注对象识别平台",
+    "register": "product",
+    "direction": "复核工作区稳态：固定侧栏底栏、边缘自适应人脸标注、归档与待复核清晰分层",
+    "motion": ["route-transition", "face-scan", "status-transition"],
+    "notes": "修复侧栏内容挤出、检测框越界与标签截断；切换图片时按当前图片重新选择人脸，保证重进复核页仍显示框和标注。"
+  },
+  {
+    "date": "2026-08-31",
+    "target": "重点关注对象识别平台",
+    "register": "product",
+    "direction": "政企超宽屏运营控制台：石墨侧栏、纸面内容层、冰蓝品牌光感与稳定的业务栅格",
+    "motion": ["route-transition", "menu-enter", "card-stagger", "subtle-brand-glow"],
+    "notes": "按用户反馈保留少量精选渐变与光晕，但收敛整页霓虹和 AI 宣传感；大屏通过壳层比例和布局适配，全屏按钮仅为辅助。"
+  },
+  {
+    "date": "2026-08-30",
+    "target": "重点关注对象识别平台",
+    "register": "product",
+    "direction": "超宽屏运营控制台：明确项目上下文、可执行顶栏、大屏模式与分层信息密度",
+    "motion": ["shell-enter", "route-transition", "menu-enter", "card-stagger"],
+    "notes": "头像改为用户菜单并保留显式退出；新增数据大屏路由并对图表包做懒加载，避免主包膨胀。"
+  },
+  {
+    "date": "2026-08-30",
+    "target": "重点关注对象识别平台",
+    "register": "product",
+    "direction": "Editorial operations console：分栏工作区、上下文项目胶囊、可执行的顶栏动作、低干扰转场",
+    "motion": ["shell-enter", "route-transition", "orbit-still", "card-stagger"],
+    "notes": "参考成熟 SaaS 工作台的层级和留白；动效服务于状态变化，不使用品牌宣传页式粒子背景。"
+  },
+  {
+    "date": "2026-08-30",
+    "target": "重点关注对象识别平台",
+    "register": "product",
+    "direction": "可信的识别工作台：深色导航、清晰任务队列、固定复核动作栏、轻量错峰入场",
+    "motion": ["page-fade", "card-stagger", "scan-feedback", "status-transition"],
+    "notes": "避免品牌宣传页式的大面积粒子；业务页面优先可读性、可追溯和快速复核。"
+  },
+  {
+    "date": "2026-08-31",
+    "target": "重点关注对象识别平台",
+    "register": "product",
+    "direction": "识别结果固定总览：人脸颜色、匹配候选、相似度和阈值说明在同一视区呈现",
+    "motion": ["face-select", "scan-feedback", "status-transition"],
+    "notes": "识别页新增固定匹配过程总览；边缘标签自动内收；候选卡片沿用人脸身份色，避免切换人脸时上下颜色错位。"
+  }
+]
