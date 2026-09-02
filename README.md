@@ -1,6 +1,6 @@
 # 人脸识别系统 - Face Recognition System
 
-基于 ChatGPT 分享方案构建的端到端人脸识别系统原型。
+构建的端到端人脸识别系统原型。
 
 范围：公开/已授权数据、内网部署、相似候选标记、人工复核，不自动确认身份。
 
@@ -38,7 +38,7 @@ cd backend && python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 cd frontend && npm install && npm run dev
 ```
 
-## 同事快速验收
+## 快速验收
 
 仓库内的 `examples/demo_data` 是一套 57 张图片的匿名公开样例（8 个对象、单人图、未知人脸和多人合成图），可直接按 [examples/README.md](examples/README.md) 导入测试。接口级冒烟测试：
 
